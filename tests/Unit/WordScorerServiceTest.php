@@ -18,10 +18,10 @@ class WordScorerServiceTest extends TestCase
     public function wordScoresDataProvider(): array
     {
         return [
-            ['apple', ['uniqueLetters' => 4, 'almostPalindrome' => 0, 'palindrome' => 0, 'total' => 4]],
-            ['banana', ['uniqueLetters' => 3, 'almostPalindrome' => 2, 'palindrome' => 0, 'total' => 5]],
-            ['radar', ['uniqueLetters' => 3, 'almostPalindrome' => 0, 'palindrome' => 3, 'total' => 6]],
-            ['mom', ['uniqueLetters' => 2, 'almostPalindrome' => 0, 'palindrome' => 3, 'total' => 5]],
+            ['apple', ['word' => 'apple', 'uniqueLetters' => 4, 'almostPalindrome' => 0, 'palindrome' => 0, 'total' => 4]],
+            ['banana', ['word' => 'banana', 'uniqueLetters' => 3, 'almostPalindrome' => 2, 'palindrome' => 0, 'total' => 5]],
+            ['radar', ['word' => 'radar', 'uniqueLetters' => 3, 'almostPalindrome' => 0, 'palindrome' => 3, 'total' => 6]],
+            ['mom', ['word' => 'mom', 'uniqueLetters' => 2, 'almostPalindrome' => 0, 'palindrome' => 3, 'total' => 5]],
 
         ];
     }

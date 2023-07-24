@@ -36,6 +36,6 @@ class WordScorerService
     $this->setPalindrome($word);
     $this->palindrome ?: $this->setAlmostPalindrome($word);
     $this->total = $this->uniqueLetters + $this->almostPalindrome + $this->palindrome;
-    return $result = ['uniqueLetters' => $this->uniqueLetters, 'almostPalindrome' => $this->almostPalindrome, 'palindrome' => $this->palindrome, 'total' => $this->total];
+    return $result = ['word' => $word, 'uniqueLetters' => $this->uniqueLetters, 'almostPalindrome' => $this->almostPalindrome, 'palindrome' => $this->palindrome, 'total' => $this->total];
   }
 }
